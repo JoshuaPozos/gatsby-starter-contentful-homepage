@@ -4,6 +4,9 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
+console.log("CONTENTFUL_ACCESS_TOKEN", process.env.CONTENTFUL_ACCESS_TOKEN)
+console.log("CONTENTFUL_HOST", process.env.CONTENTFUL_HOST)
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://gatsbycontentfulhomepage.gatsbyjs.io/",
